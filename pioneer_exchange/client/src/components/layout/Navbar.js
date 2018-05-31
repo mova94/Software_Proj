@@ -33,7 +33,7 @@ class Navbar extends Component {
                 </Link>
               </li>
 
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Textbooks
                   </a>
@@ -43,17 +43,17 @@ class Navbar extends Component {
                       </div>
               </li>
 
-               <li class="nav-item dropdown">
+               <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Electronics
                     </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a className="dropdown-item" href="/electronics">Browse</a>
-                        <Link className="dropdown-item" to="/postElectronics">Post</Link>
+                        <Link className="dropdown-item" to="/postElectronic">Post</Link>
                       </div>
               </li>
 
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Housing
                     </a>
@@ -63,13 +63,13 @@ class Navbar extends Component {
                       </div>
               </li>
 
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Tickets
                     </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a className="dropdown-item" href="/tickets">Browse</a>
-                        <Link className="dropdown-item" to="/postTickets">Post</Link>
+                        <Link className="dropdown-item" to="/postEventTicket">Post</Link>
                       </div>
               </li>
             </ul>

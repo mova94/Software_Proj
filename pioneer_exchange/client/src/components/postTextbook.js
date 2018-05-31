@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import classnames from 'classnames';
 
-import '../styling/register.css';
+import './styling/register.css';
 
 class postTextbook extends Component {
   constructor() {
@@ -51,7 +51,7 @@ class postTextbook extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              //<h1 id="signin-title" className="display-4 text-center">Sign Up</h1>
+              <h1 id="signin-title" className="display-4 text-center">Post Submition</h1>
               <p className="lead text-center">
                 Post your Textbook!
               </p>
