@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link, Redirect} from 'react-router-dom';
 import axios from 'axios';
 import classnames from 'classnames';
 
@@ -12,7 +13,8 @@ class Register extends Component {
       email: '',
       password: '',
       password2: '',
-      errors: {}
+      errors: {},
+      redirect: false
     };
 
     this.onChange = this.onChange.bind(this);
@@ -33,10 +35,12 @@ class Register extends Component {
       password2: this.state.password2
     };
 
-    axios
-      .post('/api/users/register', newUser)
-      .then(res => console.log(res.data))
-      .catch(err => this.setState({ errors: err.response.data }));
+    // axios
+    //   .post('/api/users/register', newUser)
+    //   .then(res => console.log(res.data))
+    //   .catch(err => this.setState({ errors: err.response.data }));
+
+    this.setState({redirect: true})
   }
 
   render() {
@@ -118,6 +122,8 @@ class Register extends Component {
                 </div>
                 <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>
+              {this.state.redirect && 
+              <Redirect to='/login'/>}
             </div>
           </div>
         </div>

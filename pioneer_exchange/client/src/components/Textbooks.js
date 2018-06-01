@@ -7,8 +7,70 @@ class Textbooks extends Component{
         super(props);
 
         this.state = {
-            allTextbooks:[],
-            textbooks:[],
+            allTextbooks:[
+                {
+                    title: "Book1",
+                    author: "Person1",
+                    price: "$4"
+                },
+                {
+                    title: "Paper",
+                    author: "Person9",
+                    price: "$4"
+                },
+                {
+                    title: "How to Make Your Head Shiny",
+                    author: "Hank The Tank",
+                    price: "An A in SE1"
+                },
+                {
+                    title: "Science",
+                    author: "Person4",
+                    price: "$4"
+                },
+                {
+                    title: "Math",
+                    author: "Person6",
+                    price: "$4"
+                },
+                {
+                    title: "The Proper Way To Grow A Wizard Facial Hair",
+                    author: "Hankledor",
+                    price: "Wizard Wond"
+                }
+
+            ],
+            textbooks: [{
+                        title: "Book1",
+                        author: "Person1",
+                        price: "$4"
+                    },
+                    {
+                        title: "Paper",
+                        author: "Person9",
+                        price: "$4"
+                    },
+                    {
+                        title: "How to Make Your Head Shiny",
+                        author: "Hank The Tank",
+                        price: "An A in SE1"
+                    },
+                    {
+                        title: "Science",
+                        author: "Person4",
+                        price: "$4"
+                    },
+                    {
+                        title: "Math",
+                        author: "Person6",
+                        price: "$4"
+                    },
+                    {
+                        title: "The Proper Way To Grow A Wizard Facial Hair",
+                        author: "Hankledor",
+                        price: "Wizard Wond"
+                    }
+            ],
             search:''
         }
 
